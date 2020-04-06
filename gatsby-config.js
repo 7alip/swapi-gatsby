@@ -18,7 +18,7 @@ module.exports = {
          * @property {boolean} [isUsingColorMode=true]
          * if false, this plugin will not use <ColorModeProvider />
          */
-        isUsingColorMode: true,
+        isUsingColorMode: false,
       },
     },
     `gatsby-theme-apollo`,
@@ -30,7 +30,7 @@ module.exports = {
         url: "https://swapi.graph.cool/",
       },
     },
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet-async`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
