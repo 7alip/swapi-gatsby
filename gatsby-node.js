@@ -1,7 +1,30 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require("path")
+const slash = require("slash")
+const { slug } = require("./src/utils/slugify")
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  const result = await graphql(`
+    query filmsQuery {
+      swapi {
+        allFilms {
+          id
+          title
+        }
+      }
+    }
+  `)
+
+  const filmComponent = path.resolve("./src/templates/film.js")
+
+  result.data.swapi.allFilms.forEach(film => {
+    createPage({
+      path: `/films/${slug(film.title)}`,
+      component: slash(filmComponent),
+      context: {
+        id: film.id,
+      },
+    })
+  })
+}
