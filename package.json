@@ -67,6 +67,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
+    "test:w": "jest --watch",
     "cy:open": "cypress open"
   },
   "husky": {

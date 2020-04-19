@@ -5,6 +5,7 @@
     "kentcdodds/jsx-a11y",
     "kentcdodds/jest"
   ],
+  "plugins": ["jest"],
   "rules": {
     "import/no-unresolved": "off",
     "react/prop-types": "off",

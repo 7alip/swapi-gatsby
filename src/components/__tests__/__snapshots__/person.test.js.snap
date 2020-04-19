@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter snapshot renders 1`] = `
+.emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: full;
+  padding: 32px;
+  box-shadow: sm;
+}
+
+.emotion-0 {
+  margin-right: 16px;
+}
+
+.emotion-21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width:52em) {
+  .emotion-21 {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+}
+
+.emotion-5 {
+  width: 200px;
+}
+
+.emotion-1 {
+  font-size: md;
+  line-height: shorter;
+  font-weight: bold;
+  font-family: heading;
+}
+
+.emotion-2 {
+  font-family: body;
+}
+
+.emotion-20 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-19 {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.emotion-8 {
+  font-family: body;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: full;
+}
+
+.emotion-7 {
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: none;
+  color: blue.400;
+}
+
+.emotion-7:hover {
+  color: blue.600;
+}
+
+.emotion-7:focus {
+  box-shadow: none;
+}
+
+.emotion-7:disabled,
+.emotion-7:disabled:focus,
+.emotion-7:disabled:hover,
+.emotion-7[aria-disabled=true],
+.emotion-7[aria-disabled=true]:focus,
+.emotion-7[aria-disabled=true]:hover {
+  opacity: 0.4;
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+  className="emotion-22"
+>
+  <div
+    className="emotion-0"
+  />
+  <div
+    className="emotion-21"
+  >
+    <div
+      className="emotion-5"
+    >
+      <h2
+        className="emotion-1"
+      >
+        Luke Skywalker
+      </h2>
+      <p
+        className="emotion-2"
+      >
+        DoB: 
+        19BBY
+      </p>
+      <p
+        className="emotion-2"
+      >
+        Height: 
+        172
+      </p>
+      <p
+        className="emotion-2"
+      >
+        Gender: 
+        MALE
+      </p>
+    </div>
+    <div
+      className="emotion-20"
+    >
+      <h2
+        className="emotion-1"
+      >
+        Movies
+      </h2>
+      <ul
+        className="emotion-19"
+      >
+        <p
+          className="emotion-8"
+          title="A New Hope"
+        >
+          <a
+            className="emotion-7"
+            href="/films/a-new-hope"
+          >
+            A New Hope
+          </a>
+        </p>
+        <p
+          className="emotion-8"
+          title="Attack of the Clones"
+        >
+          <a
+            className="emotion-7"
+            href="/films/attack-of-the-clones"
+          >
+            Attack of the Clones
+          </a>
+        </p>
+        <p
+          className="emotion-8"
+          title="Revenge of the Sith"
+        >
+          <a
+            className="emotion-7"
+            href="/films/revenge-of-the-sith"
+          >
+            Revenge of the Sith
+          </a>
+        </p>
+        <p
+          className="emotion-8"
+          title="Return of the Jedi"
+        >
+          <a
+            className="emotion-7"
+            href="/films/return-of-the-jedi"
+          >
+            Return of the Jedi
+          </a>
+        </p>
+        <p
+          className="emotion-8"
+          title="The Empire Strikes Back"
+        >
+          <a
+            className="emotion-7"
+            href="/films/the-empire-strikes-back"
+          >
+            The Empire Strikes Back
+          </a>
+        </p>
+        <p
+          className="emotion-8"
+          title="The Force Awakens"
+        >
+          <a
+            className="emotion-7"
+            href="/films/the-force-awakens"
+          >
+            The Force Awakens
+          </a>
+        </p>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
