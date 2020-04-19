@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useLazyQuery, useQuery } from "@apollo/client"
+import { useLazyQuery } from "@apollo/client"
 import { GET_PEOPLE } from "../queries"
 import {
   Input,

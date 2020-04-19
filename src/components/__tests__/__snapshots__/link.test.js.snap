@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter snapshot renders 1`] = `
+.emotion-0 {
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: none;
+  color: blue.400;
+}
+
+.emotion-0:hover {
+  color: blue.600;
+}
+
+.emotion-0:focus {
+  box-shadow: none;
+}
+
+.emotion-0:disabled,
+.emotion-0:disabled:focus,
+.emotion-0:disabled:hover,
+.emotion-0[aria-disabled=true],
+.emotion-0[aria-disabled=true]:focus,
+.emotion-0[aria-disabled=true]:hover {
+  opacity: 0.4;
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<a
+  className="emotion-0"
+  href="/test"
+>
+  Test
+</a>
+`;

@@ -26,7 +26,7 @@ const variants = {
     opacity: 1,
     x: 0,
     transition: {
-      duration: duration,
+      duration,
       delay: duration,
       when: "beforeChildren",
     },
@@ -34,7 +34,7 @@ const variants = {
   exit: {
     opacity: 0,
     x: -200,
-    transition: { duration: duration },
+    transition: { duration },
   },
 }
 

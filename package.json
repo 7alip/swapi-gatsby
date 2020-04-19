@@ -35,10 +35,19 @@
     "slugify": "^1.4.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.2",
     "babel-jest": "^25.3.0",
+    "babel-plugin-emotion": "^10.0.33",
     "babel-preset-gatsby": "^0.3.1",
+    "eslint": "^6.8.0",
+    "eslint-config-kentcdodds": "^14.8.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.3.0",
+    "jest-emotion": "^10.0.32",
+    "lint-staged": "^10.1.5",
     "prettier": "^1.19.1",
     "react-test-renderer": "^16.13.1"
   },
@@ -50,10 +59,16 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint": "eslint .",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "repository": {
     "type": "git",
@@ -61,5 +76,10 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/setup-test-env.js"
+    ]
   }
 }

@@ -18,15 +18,6 @@ const People = ({ people, loading, error }) => {
           text={error.message || "Error while fetching data!"}
           status="error"
         />
-      ) : !people ? (
-        <Flex flex="1" align="center" justify="center" w={320} mx="auto">
-          <Box textAlign="center">
-            <Icon size={100} name="movieIcon" />
-            <Text mt={3} fontSize="1.2em">
-              Start exploring the information about your favorites actors
-            </Text>
-          </Box>
-        </Flex>
       ) : people.allPersons.length === 0 ? (
         <Flex flex="1" align="center" justify="center" w={320} mx="auto">
           <Box textAlign="center">
@@ -36,7 +27,7 @@ const People = ({ people, loading, error }) => {
             </Text>
           </Box>
         </Flex>
-      ) : (
+      ) : people ? (
         <SimpleGrid
           justifySelf="flex-start"
           w="full"
@@ -55,6 +46,15 @@ const People = ({ people, loading, error }) => {
             </motion.div>
           ))}
         </SimpleGrid>
+      ) : (
+        <Flex flex="1" align="center" justify="center" w={320} mx="auto">
+          <Box textAlign="center">
+            <Icon size={100} name="movieIcon" />
+            <Text mt={3} fontSize="1.2em">
+              Start exploring the information about your favorites actors
+            </Text>
+          </Box>
+        </Flex>
       )}
     </AnimatePresence>
   )
